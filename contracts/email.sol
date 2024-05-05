@@ -2,6 +2,17 @@
 pragma solidity ^0.8.24;
 
 contract email{
+
+    address public owner;
+
+
+    constructor(
+    ){
+        owner = msg.sender;
+    }
+    
+    
+    
     //mail id
     uint256 mailId; 
     //mails by recievers 
@@ -42,7 +53,7 @@ contract email{
         return 3;
     }
 
-    function getRecived() public view returns (uint256[] memory){
+    function getReceived() public view returns (uint256[] memory){
         return mailReceived[msg.sender];
     }
 }
