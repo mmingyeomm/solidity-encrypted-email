@@ -12,7 +12,6 @@ contract email{
     }
     
     
-    
     //mail id
     uint256 mailId; 
     //mails by recievers 
