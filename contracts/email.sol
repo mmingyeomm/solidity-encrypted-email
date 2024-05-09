@@ -25,6 +25,7 @@ contract email{
         address id; 
         string pubkey; 
     }
+    
 
 
     mapping(address =>Profile) profiles;
