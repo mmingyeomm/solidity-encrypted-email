@@ -6,6 +6,7 @@ contract email{
     address public owner;
 
 
+
     constructor(
     ){
         owner = msg.sender;
@@ -25,8 +26,6 @@ contract email{
         address id; 
         string pubkey; 
     }
-    
-
 
     mapping(address =>Profile) profiles;
 
