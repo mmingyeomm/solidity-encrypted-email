@@ -4,9 +4,12 @@ pragma solidity ^0.8.24;
 contract email{
 
     address public owner;
-
-
-
+    
+    modifier onlyOwner() {
+        require (msg.sender == owner, "Only Owner");
+        _;
+    }
+    
     constructor(
     ){
         owner = msg.sender;
